@@ -1,0 +1,136 @@
+<head><link rel="stylesheet" href="devicon-master/devicon.min.css">
+<link rel="stylesheet" href="home.css">
+<title>
+Login in to codeHelper
+</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 0) {
+                $(".header").addClass("fixed");
+            } else {
+                $(".header").removeClass("fixed");
+            }
+        });
+    </script>
+    <style type="text/css">
+        .fixed {
+        position:fixed;
+        width:100%;
+        top:0;
+        left:0;
+    }
+    </style>
+
+<style>
+
+legend{
+  font-size:30px;
+color: white;}
+
+  form{
+    color: white;
+    font-size: 22px;
+  }
+  select,input{
+    font-size: 22px;
+  }
+
+.dfg {
+    background-color: lightblue;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dfg:hover{
+color: black;
+background-color: orange;
+}
+
+</style>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;}
+    var x = document.forms["myForm"]["pass"].value;
+    if (x == "") {
+        alert("password must be filled out");
+        return false;}
+
+
+}
+</script>
+</head>
+
+<body>
+  <div class="header">
+  <div class="div1"><center>
+  	<a href="CodeHelper.html"><H1 id="div1para1">Code;Helper{ }</h1></a></center>
+  </div>
+
+
+  <div class="div2navbar">
+    <a href="CodeHelper.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn" >Languages</button>
+    <div class="dropdown-content" id="drop1">
+          <a href="c.html">C</a>
+          <a href="cplusplus.html">C++</a>
+          <a href="html.html">Html</a>
+          <a href="css.html">Css</a>
+          <a href="javascript.html">JavaScript</a>
+          <a href="jquery.html">JQuery</a>
+          <a href="java.html">Java</a>
+          <a href="python.html">Python</a>
+          <a href="bash.html">Bash</a>
+          <a href="ds.html">DataStructures</a>
+    </div>
+  </div>
+  <div>
+    <a href="/about">About</a>
+  </div>
+  <div class="log">
+    <a href="signup.html">Sign Up</a>
+</div>
+<div class="log">
+    <a href="login.html">Log In</a>
+</div>
+  </div>
+
+</div>
+
+
+
+<br><br>
+
+
+
+<body background="1.jpg">
+
+  <fieldset>
+  <legend>Log-In</legend>
+  <form name="myForm"
+  onsubmit="return validateForm()">
+  UserName: <input type="text" name="fname"><br><br>
+<pre>Password:<input type ="password" name="pass"></pre><br><br>
+  <input type="submit" value="Submit" class ="dfg">
+  </form>
+
+  </body>
+  </html>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cpluslus</title><link rel="stylesheet" href="home.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script type="text/javascript">
+          $(window).scroll(function () {
+              if ($(window).scrollTop() > 226) {
+                  $(".header").addClass("fixed");
+              } else {
+                  $(".header").removeClass("fixed");
+              }
+          });
+      </script>
+      <style type="text/css">
+          .fixed {
+          position:absolute;
+          width:100%;
+          top:0;
+          left:0;
+      }
+      </style>
+      <link rel="stylesheet" href="ccsspage.css">
+
+</head>
+<body>
+  <div class="header">
+	<div class="div1"><center>
+		<a href="CodeHelper.html"><H1 id="div1para1">Code;Helper{ }</h1></a></center>
+	</div>
+
+
+	<div class="div2navbar">
+		<a href="CodeHelper.html">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn" >Languages</button>
+		<div class="dropdown-content" id="drop1">
+					<a href="c.html">C</a>
+					<a href="cplusplus.html">C++</a>
+					<a href="html.html">Html</a>
+					<a href="css.html">Css</a>
+					<a href="javascript.html">JavaScript</a>
+					<a href="jquery.html">JQuery</a>
+					<a href="java.html">Java</a>
+					<a href="python.html">Python</a>
+					<a href="bash.html">Bash</a>
+					<a href="ds.html">DataStructures</a>
+		</div>
+	</div>
+	<div>
+		<a href="about.html">About</a>
+	</div>
+  <div>
+    <a href="contactus.html">Contact Us</a>
+  </div>
+	<div class="log">
+		<a href="signup.html">Sign Up</a>
+	</div>
+	<div class="log">
+		<a href="login.html">Log In</a>
+	</div>
+	</div>
+
+
+<script type="text/javascript">
+			   function toggle_visibility(id) {
+			      var e = document.getElementById(id);
+			      if(e.style.display == 'block')
+			         e.style.display = 'none';
+			      else
+			         e.style.display = 'block';
+			   }
+			</script>
+
+      <div class="div1">
+        <h2 id="div11">JavaScript</h2>
+        <p id="div12">Object oriented programming language mostly used to create interactive effects within web browsers.</p>
+      </div>
+<br><br>
+				<div class="div2">
+					<div class="div22">
+						<div class="div23">
+							<h1>Data Types</h1>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('Number');" style="display: block"><span style="width: 100%">Number <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='Number' style="display: none;">
+								<p>An integer or floating-point value. In JavaScript there is no distincion between the 2 (internally they are all represented as floating point values).</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">var1 = 1; var2 = 1.2;</code></pre>
+							</div>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('String');" style="display: block"><span style="width: 100%">String <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='String' style="display: none;">
+								<p>A sequence of unicode characters used to represent text.</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">var3 = &#39;var&#39;;</code></pre>
+							</div>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('Boolean');" style="display: block"><span style="width: 100%">Boolean <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='Boolean' style="display: none;">
+								<p>A true/false value.</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">var0 = false; var1 = true;</code></pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="div2">
+					<div class="div22">
+						<div class="div23">
+							<h1>Structures</h1>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('if');" style="display: block"><span style="width: 100%">if <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='if' style="display: none;">
+								<p>Executes code if the following statement is true.</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">if (statement) {
+    &lt;code&gt;
+}
+</code></pre>
+								<h3>Example</h3>
+								<pre><code class="language-javascript">var x = 5;
+if (x == 5) {
+  window.alert (&quot;Look at that! X is equal to 5&quot;);
+}
+</code></pre>
+								<p>Code will only be executed if the variable x is 5.</p>
+							</div>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('else');" style="display: block"><span style="width: 100%">else <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='else' style="display: none;">
+								<p>Follows an if block and will be executed if the if block isn&#39;t.</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">if (statement) {
+    &lt;code&gt;
+} else {
+    &lt;code&gt;
+}
+</code></pre>
+								<h3>Example</h3>
+								<pre><code class="language-javascript">var i = 10;
+if (i == 11) {
+  window.alert (&quot;Look at that! X is equal to 11&quot;);
+} else {
+  window.alert (&quot;Look at that! X is not equal to 11&quot;);
+}
+</code></pre>
+								<p>Else code executes if i is not equal to 11.</p>
+							</div>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('else_if');" style="display: block"><span style="width: 100%">else if <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='else_if' style="display: none;">
+								<p>Follows an if block and will be executed if the previous if block wasn&#39;t executed and the new parameters are met.</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">if (statement) {
+  &lt;code&gt;
+} else if (statement) {
+  &lt;code&gt;
+}
+</code></pre>
+								<h3>Example</h3>
+								<pre><code class="language-javascript">var x = 5;
+if (x == 10) {
+  window.alert (&quot;Look at that! X is equal to 10&quot;);
+} else if (x == 5) {
+  window.alert (&quot;Look at that! X is equal to 5&quot;);
+}
+</code></pre>
+								<p>Executes when previous if block doesn&#39;t and only if x equals 5.</p>
+							</div>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('while');" style="display: block"><span style="width: 100%">while <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='while' style="display: none;">
+								<p>Repeats code as long as statement remains true.</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">while (statement) {
+  &lt;code&gt;
+}
+</code></pre>
+								<h3>Example</h3>
+								<pre><code class="language-javascript">var x = 0;
+while (x &lt; 5) {
+  window.alert (&quot;Hey I have run &quot; + x + &quot; times&quot;);
+  x++;
+}
+</code></pre>
+								<p>Code will only execute if x is less than 5. This will keep looping until x is greater than 5.</p>
+							</div>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('do_while');" style="display: block"><span style="width: 100%">do while <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='do_while' style="display: none;">
+								<p>Code executes once and then statement is tested. If statement remains true the do while will keep looping.</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">do {
+  &lt;code&gt;
+} while (statement)
+</code></pre>
+								<h3>Example</h3>
+								<pre><code class="language-javascript">var x = 5;
+do {
+  window.alert (&quot;Hey look I will still execute once!&quot;);
+} while (x != 5);
+</code></pre>
+								<p>Code will execute once and then test if x is not equal to 5. if the statement evaluates to true if will continue to loop, if not it&#39;ll move on.</p>
+							</div>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('for');" style="display: block"><span style="width: 100%">for <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='for' style="display: none;">
+								<p>Loops as long as the stated conditions are met.</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">for (variable; statement; increment) {
+  &lt;code&gt;
+}
+</code></pre>
+								<h3>Example</h3>
+								<pre><code class="language-javascript">for (x=0; x &lt; 5; x++) {
+  window.alert (&quot;Hey I have run &quot; + x + &quot; times&quot;);
+}
+</code></pre>
+								<p>Evaluates &#39;x&#39; and loops if x is less than 5. After each execution the value of x will increase by &#39;1&#39;.</p>
+							</div>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('switch');" style="display: block"><span style="width: 100%">switch <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='switch' style="display: none;">
+								<p>Allows specific code to be used. Variable used must be an integer and the &#39;vars&#39; must be constant. The switch will jump to the first case that&#39;s equal to your stated variable and do the rest of the codes from there (so it&#39;ll skip everything before the first case used). If none of the cases are equal to your variable then it&#39;ll only execute the last section of code (the code following &#39;default&#39;).</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">switch (variable) {
+case var1:
+  &lt;code&gt;
+  break;
+case var2:
+  &lt;code&gt;
+  break;
+default:
+  &lt;code&gt;
+  break;
+}
+</code></pre>
+								<h3>Example</h3>
+								<pre><code class="language-javascript">var x = 5;
+switch (x) {
+case 4:
+  window.alert (&quot;Look x is equal to &quot; + x);
+  break;
+case 5:
+  window.alert (&quot;Look x is equal to &quot; + x);
+  break;
+default:
+  window.alert (&quot;Look x is equal to &quot; + x);
+  break;
+}
+</code></pre>
+								<p>This switch would only execute the code in the &#39;case 5&#39; block.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="div2">
+					<div class="div22">
+						<div class="div23">
+							<h1>Functions</h1>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('Anonymous_function');" style="display: block"><span style="width: 100%">Anonymous function <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='Anonymous_function' style="display: none;">
+								<p>An unnamed function that is called at runtime.</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">function (parameters) {
+  &lt;code&gt;
+}
+</code></pre>
+								<h3>Example</h3>
+								<pre><code class="language-javascript">function (var1, var2) {
+  console.log (var1 + var2);
+}
+</code></pre>
+							</div>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('Named_function');" style="display: block"><span style="width: 100%">Named function <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='Named_function' style="display: none;">
+								<p>A function given a name, to be executed when explicitly called.</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">function myFunctionName (parameters) {
+  &lt;code&gt;
+}
+</code></pre>
+								<h3>Example</h3>
+								<pre><code class="language-javascript">function addThis (var1, var2) {
+  var total = var1 + var 2;
+  return total;
+}
+
+addThis(1, 2);
+</code></pre>
+							</div>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('Immediately_invoked_function_expression_(IIFE)');" style="display: block"><span style="width: 100%">Immediately invoked function expression (IIFE) <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='Immediately_invoked_function_expression_(IIFE)' style="display: none;">
+								<p>A function invoked at runtime, creating its own scope.</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">(function(){
+  &lt;code&gt;
+})();
+</code></pre>
+								<h3>Example</h3>
+								<pre><code class="language-javascript">(function(){
+  console.log(&#39;code&#39;);
+})();
+</code></pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="div2">
+					<div class="div22">
+						<div class="div23">
+							<h1>User Interface</h1>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('Prompt');" style="display: block"><span style="width: 100%">Prompt <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='Prompt' style="display: none;">
+								<p>Displays as a prompt.</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">window.prompt (text_or_prompt, default_value);</code></pre>
+								<h3>Example</h3>
+								<pre><code class="language-javascript">window.prompt (&quot;What is your name?, &quot;Type your name here&quot;);</code></pre>
+								<p>Displays &quot;What is your name?&quot; and auto-fills the textbox with &quot;Type your name here.&quot;</p>
+							</div>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('Alert');" style="display: block"><span style="width: 100%">Alert <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='Alert' style="display: none;">
+								<p>Displays message that must be accepted to continue.</p>
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">window.alert (&quot;text&quot;);</code></pre>
+								<h3>Example</h3>
+								<pre><code class="language-javascript">window.alert (&quot;Meth, not even once.&quot;);</code></pre>
+								<p>This will display a message reading &quot;Meth, not even once&quot; and will require the user to acknowledge the message to continue.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="div2">
+					<div class="div22">
+						<div class="div23">
+							<h1>Comments</h1>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('Single_Line');" style="display: block"><span style="width: 100%">Single Line <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='Single_Line' style="display: none;">
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">// comments</code></pre>
+							</div>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('Block');" style="display: block"><span style="width: 100%">Block <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='Block' style="display: none;">
+								<h3>Syntax</h3>
+								<pre><code class="language-javascript">/* many comments */</code></pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="div2">
+					<div class="div22">
+						<div class="div23">
+							<h1>Hello World</h1>
+						</div>
+						<div class="div231">
+							<h2><a onclick="toggle_visibility('Example');" style="display: block"><span style="width: 100%">Example <i class="icon fa-angle-down" style="float: right"></i></span></a></h2>
+							<div id='Example' style="display: none;">
+								<pre><code class="language-javascript">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;p&gt;Header...&lt;/p&gt;
+    &lt;script&gt;
+      window.alert(&#39;Hello, World!&#39;);
+    &lt;/script&gt;
+    &lt;p&gt;...Footer&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- /Container -->
+	</div><!-- /Main -->
+
+</body>
+</html>

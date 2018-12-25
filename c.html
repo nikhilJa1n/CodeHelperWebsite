@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C</title>
+  <link rel="stylesheet" href="home.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script type="text/javascript">
+          $(window).scroll(function () {
+              if ($(window).scrollTop() > 226) {
+                  $(".header").addClass("fixed");
+              } else {
+                  $(".header").removeClass("fixed");
+              }
+          });
+      </script>
+      <style type="text/css">
+          .fixed {
+          position:absolute;
+          width:100%;
+          top:0;
+          left:0;
+      }
+      </style>
+      <link rel="stylesheet" href="ccsspage.css">
+
+</head>
+<body>
+
+  <script type="text/javascript">
+           function myfunc(id) {
+              var e = document.getElementById(id);
+              if(e.style.display == 'block')
+                 e.style.display = 'none';
+              else
+                 e.style.display = 'block';
+           }
+        </script>
+  <div class="header">
+  <div class="div1"><center>
+    <a href="CodeHelper.html"><H1 id="div1para1">Code;Helper{ }</h1></a></center>
+  </div>
+
+
+  <div class="div2navbar">
+    <a href="CodeHelper.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn" >Languages</button>
+    <div class="dropdown-content" id="drop1">
+          <a href="c.html">C</a>
+          <a href="cplusplus.html">C++</a>
+          <a href="html.html">Html</a>
+          <a href="css.html">Css</a>
+          <a href="javascript.html">JavaScript</a>
+          <a href="jquery.html">JQuery</a>
+          <a href="java.html">Java</a>
+          <a href="python.html">Python</a>
+          <a href="bash.html">Bash</a>
+          <a href="ds.html">DataStructures</a>
+    </div>
+  </div>
+  <div>
+    <a href="about.html">About</a>
+  </div>
+  <div>
+    <a href="contactus.html">Contact Us</a>
+  </div>
+  <div class="log">
+    <a href="signup.html">Sign Up</a>
+  </div>
+  <div class="log">
+    <a href="login.html">Log In</a>
+  </div>
+  </div>
+
+  <div class="div1">
+        <h2 id="div11">C</h2>
+        <p id="div12">General purpose, low-level programming language.</p>
+      </div>
+
+<br><br>
+      <div class="div2">
+
+          <div class="div22">
+            <div class="div23">
+              <h1>Data Types</h1>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('Basic_variables');"><span style="width: 100%">Basic variables</span></a></h2>
+              <div id='Basic_variables' style="display: none;">
+                <p>Declares a variable of one of the basic built-in types.</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">typename variablename</code></pre>
+                <h3>Example</h3>
+                <pre><code class="language-c">int x, y=3
+float f;
+char c;
+</code></pre>
+                <p>declares two integers, x and y. y is initialized to 3. declares a floating point variable, f and a char(1 byte) variable c.</p>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('Array');"><span style="width: 100%">Array</span></a></h2>
+              <div id='Array' style="display: none;">
+                <p>For storing a list of things</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">//declaration
+typename arrayname[ARRAY_SIZE];
+//access the nth element
+arrayname[n-1]  //arrays are indexed starting at 0
+</code></pre>
+                <h3>Example</h3>
+                <pre><code class="language-c">int primes[10] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29};
+int five = primes[2];
+</code></pre>
+                <p>Creates and array then indexes on that array</p>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('Struct');"><span style="width: 100%">Struct</span></a></h2>
+              <div id='Struct' style="display: none;">
+                <p>Declares a data type with several member variables. Structs are used to group variables together.</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">//define the structure
+struct mystruct
+{
+  typename membername;
+  ...
+};
+//declare an instance
+struct mystruct instancename;
+</code></pre>
+                <h3>Example</h3>
+                <pre><code class="language-c">struct point
+{
+ int x, y;
+};
+struct point begin, end;
+begin.x = 0;
+begin.y = 0;
+</code></pre>
+                <p>Defines a struct called point, than creates 2 instances, called begin and end. The x and y members of begin are then set to 0.</p>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('Strings');"><span style="width: 100%">Strings</span></a></h2>
+              <div id='Strings' style="display: none;">
+                <p>Null-terminated strings. Strings are just arrays of chars</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">char string[13] = &quot;Hello World!&quot;;</code></pre>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('Pointer');"><span style="width: 100%">Pointer</span></a></h2>
+              <div id='Pointer' style="display: none;">
+                <p>Data type for storing locations in memory.</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">typename * ptr_var;</code></pre>
+                <h3>Example</h3>
+                <pre><code class="language-c">int * pA, *pB;
+int a = 3, b = 5, c = 0;
+pA = &amp;a;
+pB = &amp;b;
+c = *pA; //c is now 3
+a = *pB; //a is now 5, and *pA is also 5
+</code></pre>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="div22">
+            <div class="div23">
+              <h1>Flow Control</h1>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('if/else_if_/else');"><span style="width: 100%">If/Else If /Else</span></a></h2>
+              <div id='if/else_if_/else' style="display: none;">
+                <p>Basic if else statement common to most languages</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">if(condition) {code} else if (condition2) {code} else {code}</code></pre>
+                <h3>Example</h3>
+                <pre><code class="language-c">if( x == 0)
+{
+  printf(&quot;You don&#39;t have any bananas\n&quot;);
+} else if (x &lt; 20) {
+  printf(&quot;You have %d bananas\n&quot;, x);
+} else {
+  printf(&quot;Woah! You have a lot of bananas!\n&quot;);
+}
+</code></pre>
+                <p>This will print out how many bananas the use has (see printf for more info).</p>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('while');"><span style="width: 100%">While</span></a></h2>
+              <div id='while' style="display: none;">
+                <p>Repeats code as long as statement remains true.</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">while (statement) {code}</code></pre>
+                <h3>Example</h3>
+                <pre><code class="language-c">while (x&gt;5) {code}</code></pre>
+                <p>Code will only execute if x is greater than 5 and will keep looping until x isn&#39;t greater than 5.</p>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('do_while');"><span style="width: 100%">Do While</span></a></h2>
+              <div id='do_while' style="display: none;">
+                <p>Code executes once and then statement is tested. If statement remains true the do while will keep looping.</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">do{ code }while(statement);
+</code></pre>
+                <h3>Example</h3>
+                <pre><code class="language-c">do{
+  //code
+} while(x &gt; 5);
+</code></pre>
+                <p>Code will execute once and then test if x is greater than 5. If it is then it&#39;ll loop, if not it&#39;ll move on.</p>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('for');"><span style="width: 100%">For</span></a></h2>
+              <div id='for' style="display: none;">
+                <p>Loops as long as the stated conditions are met.</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">for (initialization; condition; increment) {code}</code></pre>
+                <h3>Example</h3>
+                <pre><code class="language-c">for (int x=0; x&gt;5; x++) {code}</code></pre>
+                <p>Evaluates &#39;x&#39; and loops if x is greater than 5. After each execution the value of x will increase by &#39;+1&#39;.</p>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('switch');"><span style="width: 100%">Switch</span></a></h2>
+              <div id='switch' style="display: none;">
+                <p>Allows specific code to be used. Variable used must be an integer and the &#39;vars&#39; must be constant. The switch will jump to the first case that&#39;s equal to your stated variable and do the rest of the codes from there (so it&#39;ll skip everything before the first case used). If none of the cases are equal to your variable then it&#39;ll only execute the last section of code (the code following &#39;default&#39;).</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">switch (variable)
+{
+  case var1:
+    code;
+  case var2:
+    code;
+  default:
+    code;
+}
+</code></pre>
+                <h3>Example</h3>
+                <pre><code class="language-c">int x = 2;
+switch (x)
+  {
+    case 1:
+      //code;
+    case 2:
+      //code;
+    default:
+      //code;
+  }
+</code></pre>
+                <p>This would initialize x to be 2, then jump to the case 2 label, where it would execute from there until the end of the switch statement. Note: even the code under default: will get executed.</p>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('Function');"><span style="width: 100%">Function</span></a></h2>
+              <div id='Function' style="display: none;">
+                <p>For creating and using subroutines.</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">returnType name(int arg1, int arg2, float arg3) { code }</code></pre>
+                <h3>Example</h3>
+                <pre><code class="language-c">int product(int a, int b) { return a * b; }</code></pre>
+                <p>Function returns the product of both of its arguments.</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="div22">
+            <div class="div23">
+              <h1>File IO</h1>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('fopen');"><span style="width: 100%">fopen</span></a></h2>
+              <div id='fopen' style="display: none;">
+                <p>Opens a file</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">FILE * file_ptr = fopen( filename, file_mode);</code></pre>
+                <h3>Example</h3>
+                <pre><code class="language-c">FILE * input_file = fopen(&quot;input.txt&quot;, &quot;r&quot;);</code></pre>
+                <p>Open a file named &quot;input.txt&quot; in read mode, and store the pointer to the file descriptor in input_file.</p>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('fscanf');"><span style="width: 100%">fscanf</span></a></h2>
+              <div id='fscanf' style="display: none;">
+                <p>reads data from the file pointed to by fp, into the locations pinted to by the additional arguments. Read information about format strings for more info.</p>
+                <h3>Example</h3>
+                <pre><code class="language-c">int a, b;
+int *B = &amp;b;
+char string[10];
+FILE *ifp = fopen(&quot;data.txt&quot;, &quot;r&quot;);
+fscanf(ifp, &quot;%d %d %s&quot;, &amp;a, B, string);</code></pre>
+                <p>Reads in two integers and a string from the beginning of data.txt, and store them in the variables a, b, and string, respectively.</p>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('scanf');"><span style="width: 100%">scanf</span></a></h2>
+              <div id='scanf' style="display: none;">
+                <p>Special case of fscanf that simply uses stdin rather than an arbitrary file. Read information about format strings for more info.</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">scanf (control_string, &amp;var1, &amp;var2, ...);</code></pre>
+                <h3>Example</h3>
+                <pre><code class="language-c">scanf (&quot;%d&quot;, &amp;x);</code></pre>
+                <p>This would read an integer from stdin and place the value of it into x</p>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('fprintf');"><span style="width: 100%">fprintf</span></a></h2>
+              <div id='fprintf' style="display: none;">
+                <h3>Syntax</h3>
+                <pre><code class="language-c">int fprintf ( FILE * ofp, const char * format, ... );</code></pre>
+                <p>Print the message described by format and the additional arguments. Read information about format strings for more info.</p>
+                <h3>Example</h3>
+                <pre><code class="language-c">int x = 10;
+float flt = 34.10;
+char str = &quot;Hello&quot;;
+FILE *ofp = fopen(&quot;output.txt&quot;, &quot;w&quot;);
+printf(&quot;%s %d is an integer, %f is a number\n&quot;, str, x, flt);</code></pre>
+                <p>opens the file output.txt for writing, then writes the message &quot;Hello 10 is an integer, 34.100000 is a number&quot; followed by a newline character</p>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('printf');"><span style="width: 100%">printf</span></a></h2>
+              <div id='printf' style="display: none;">
+                <p>Special case of the printf function, that only interacts with stdout. Read information about format strings for more info.</p>
+                <h3>Syntax</h3>
+                <pre><code class="language-c">printf (&quot;%d&quot;,&quot;text&quot;);</code></pre>
+                <h3>Example</h3>
+                <pre><code class="language-c">printf (&quot;%d&quot;, x);</code></pre>
+                <p>Writes the value of &#39;x&#39; to the stdout file.</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="div22">
+            <div class="div23">
+              <h1>Comments</h1>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('Single_Line');"><span style="width: 100%">Single Line</span></a></h2>
+              <div id='Single_Line' style="display: none;">
+                <h3>Syntax</h3>
+                <pre><code class="language-c">//comments</code></pre>
+              </div>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('Block');"><span style="width: 100%">Block</span></a></h2>
+              <div id='Block' style="display: none;">
+                <h3>Syntax</h3>
+                <pre><code class="language-c">/* many comments */</code></pre>
+              </div>
+            </div>
+          </div>
+
+        <div class="div22">
+            <div class="div23">
+              <h1>Hello World</h1>
+            </div>
+            <div class="div231">
+              <h2><a onclick="myfunc('Example');"><span style="width: 100%">Example</span></a></h2>
+              <div id='Example' style="display: none;">
+                <pre><code class="language-c">#include&lt;stdio.h&gt;
+int main(int argc, char *argv[])
+{
+  printf(&quot;Hello World\n&quot;);
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+
+
+
+
+
+
+</html>
